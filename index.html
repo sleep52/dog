@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffd977">
+<title>小狗乐园 · 四个小游戏</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-mode="home">
+
+<header class="topbar">
+  <a class="brand" href="#/"><span class="brand-pup">🐶</span><span>小狗乐园</span></a>
+  <nav class="nav">
+    <a href="#/">首页</a>
+    <a href="#/runner">小狗快跑</a>
+    <a href="#/pet">养狗日常</a>
+    <a href="#/memory">表情配对</a>
+    <a href="#/album">小狗图鉴</a>
+  </nav>
+  <div class="top-right">
+    <span id="hdrStats" class="hdr-stats"></span>
+    <button id="btnMute" class="icon-btn" type="button" title="声音开关">🔊</button>
+    <button id="btnReset" class="icon-btn" type="button" title="清空存档">↺</button>
+  </div>
+</header>
+
+<div class="view-head"><h1 id="viewTitle" class="view-title"></h1></div>
+
+<main id="view" class="view"></main>
+
+<div id="toasts" class="toasts"></div>
+
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-pup">🐶</div>
+    <h2>正在给小狗抠图</h2>
+    <p>把四张照片的白底去掉，变成能用的游戏素材…</p>
+    <div class="boot-bar"><i></i></div>
+  </div>
+</div>
+
+<script src="assets.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/state.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/runner.js"></script>
+<script src="js/pet.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/album.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
