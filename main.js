@@ -175,7 +175,7 @@ PET.App = (function () {
       route();
     }).catch(function (err) {
       boot$.innerHTML = '<div class="boot-error"><h2>素材处理失败</h2><p>' + err.message + '</p>' +
-        '<p>请确认 assets.js 和 js/ 目录都在 index.html 旁边。</p></div>';
+        '<p>请确认 assets.js 和其它 .js 文件都和 index.html 在同一个目录里。</p></div>';
     });
 
     window.addEventListener('hashchange', route);
